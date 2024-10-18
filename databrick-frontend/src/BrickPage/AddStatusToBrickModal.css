@@ -1,0 +1,47 @@
+.add-status-brick-modal {
+    .add-status-brick-modal-content {
+        min-width: 40%;
+
+        .modal-status-list {
+            width: 90%;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+
+            /* Reuse styles in BrickStatusModal.css */
+            .brick-status-item {
+                width: 50%;
+            }
+        }
+
+        .add-status-brick-feedback {
+            margin-top: 10px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .add-status-brick-feedback.success {
+            color: green;
+        }
+
+        .add-status-brick-feedback.error {
+            color: red;
+        }
+
+        .add-status-brick-modal-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            /* Allow buttons to wrap */
+            justify-content: space-between;
+            padding: 10px;
+            width: 60%;
+
+            button {
+                font-size: 14px;
+                width: 30%;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.preview-modal {
+    padding-top: 40px;
+
+    .preview-modal-content {
+        min-width: 90%;
+        padding-top: 60px !important;
+
+        .preview-modal-back-button {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 18px;
+            z-index: 10;
+        }
+    }
+}

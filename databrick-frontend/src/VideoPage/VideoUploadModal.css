@@ -1,0 +1,117 @@
+.upload-modal {
+    .upload-modal-content {
+        max-height: 75% !important;
+        max-width: 800px !important;
+        width: 100%;
+
+        .modal-header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-items: center;
+            position: relative;
+            width: 100%;
+
+            .modal-title {
+                flex: 1;
+                font-size: 2.2em;
+                text-align: center;
+            }
+
+            .back-button {
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                font-size: 18px;
+            }
+        }
+
+        ul {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-y: scroll;
+            margin: 0 -15px 0 0; 
+            padding: 0 0 0 0;
+
+            .file-item {
+                width: 70%;
+
+                button {
+                    font-size: 14px;
+                    min-width: 25%;
+                }
+
+                .upload-progress-bar {
+                    width: 100%;
+                    background-color: #e0e0e0;
+                    height: 30px;
+                    border-radius: 5px;
+                    border: none;
+
+                    .upload-progress-bar-fill {
+                        height: 100%;
+                        background-color: #5693bc;
+                        transition: width 0.3s ease;
+                        border-radius: 5px;
+                    }
+
+                    .upload-progress-percentage {
+                        color: white;
+                        position: relative;
+                        font-weight: bold;
+                        font-size: 14px;
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+
+                .feedback {
+                    min-height: 20px;
+                    font-weight: bold;
+                    margin-top: 10px;
+                    font-size: 16px;
+                    text-align: center;
+                }
+
+                .cropped {
+                    font-weight: bold;
+                }
+
+                .processing {
+                    color: orange;
+                }
+
+                .success {
+                    color: green;
+                }
+
+                .error,
+                .fail {
+                    color: red;
+                }
+            }
+        }
+
+        input[type="file"] {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .upload-button {
+            max-height: 50px;
+            min-height: 50px;
+            padding: 10px 40px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .alert {
+            color: red;
+            font-weight: bold;
+        }
+    }
+}

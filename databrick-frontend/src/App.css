@@ -1,0 +1,56 @@
+/* App.css */
+.App {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* CSS for header elements */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    width: 100vw;
+    position: fixed;
+    z-index: 100;
+}
+
+    .header .logo {
+        flex: 1;
+        display: flex;
+        align-items: center;
+    }
+
+        .header .logo img {
+            width: 140px;
+            height: auto;
+        }
+
+    .header .unimelb {
+        display: flex;
+        align-items: center; 
+    }
+
+        .header .unimelb img {
+            filter: grayscale(100%);
+            height: 68px;
+            width: auto;
+        }
+
+        .header h1 {
+        color: black;
+        font-size: 24px;
+    }
+
+    .logo-link:hover {
+        outline: 1px dotted #000; /* Adds a 2px solid black outline */
+    }
+
+/* CSS for background of the whole site */
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}

@@ -1,0 +1,31 @@
+.management-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.management-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.management-container input {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.success-message {
+    color: green;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.error-message {
+    color: red;
+    margin-top: 20px;
+    font-size: 16px;
+}

@@ -1,0 +1,39 @@
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px;
+}
+
+.show-list {
+    margin-top: 50px;
+}
+
+
+.show-item {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.show-item:hover {
+    background-color: #555;
+}
+
+
+.show-item:disabled {
+    cursor: not-allowed;
+    background-color: #888;
+}
+
+.assign-button {
+    margin: 5px;
+    padding: 5px;
+}

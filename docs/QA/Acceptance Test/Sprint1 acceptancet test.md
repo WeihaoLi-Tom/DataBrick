@@ -1,0 +1,19 @@
+## Acceptance Tests
+
+### Sprint 1 Video Upload — Artist
+
+| User Story ID | Acceptance Criteria ID | Test ID | Acceptance Test | Critical | Test Results | Comments |
+| ------------- | ---------------------- | ------- | --------------- | -------- | ------------ | -------- |
+| U1.1.1        | A111                   | AT111a  | Artist (Ayana) clicks the "Upload Video" button, and a file selection dialog window should pop up. | **YES**  |     pass         |          |
+| U1.1.1        | A111                   | AT111b  | In the file selection dialog, the artist can click the "Select File" button to navigate through the local directories and choose a video file. | **YES**  |       pass       |          |
+| U1.1.1        | A111                   | AT111c  | In the file selection dialog, the artist can click the "Close" button in the upper right corner to exit the file selection window without making a selection. | **YES**  |       pass       |          |
+| U1.1.1        | A111                   | AT111d  | Artist selects a video file from their local drive using the file picker interface. The system should allow selection only if the file exists. | **YES**  |        pass      |          |
+| U1.3          | A111                   | AT111e  | The system verifies the selected video file's format. If the format is unsupported, the system triggers the conversion process. | **YES**  |    pass          |   can check type of video but not able to tansfer       |
+| U1.3          | A111                   | AT111f  | The system converts the video to a valid format (e.g., MP4) if necessary. Conversion should complete successfully without errors. | **YES**  |              |          |
+| U1.1.1        | A112                   | AT112a  | The converted or already valid video file begins uploading to the system. The system should initiate the upload process and establish a connection to the server. | **YES**  |      pass        |          |
+| U1.1.1        | A112                   | AT112b  | During the upload, the system displays a progress bar showing the percentage of the upload completed in real-time. The progress bar should update smoothly and accurately reflect the upload status. | **YES**  |     pass         |     progress bar is not smooth enough, could be an additional requirement     |
+| U1.2.2        | A113                   | AT113a  | Once the upload is complete, the system checks the video file against defined standards (e.g., resolution, frame rate, duration). The system must identify any discrepancies or issues. | **YES**  |      pass        |          |
+| U1.2.2        | A113                   | AT113b  | If the video does not meet the required standards, the system informs the artist with a specific error message detailing the issue (e.g., "Resolution too low" or "File size too large"). The artist should be prompted to re-upload a compliant video. | **YES**  |     pass         |          |
+| U1.2.2        | A113                   | AT113c  | If the video meets all the required standards, the system confirms the successful upload and displays the video in the artist's "Video List" on the interface. The video should be accessible for further actions (e.g., playback, deletion). | **YES**  |       pass       |          |
+| U1.1.1        | A113                   | AT113d  | Each uploaded video in the "Video List" has a "Delete" button next to it. When the artist clicks this button, the system should prompt for confirmation and then delete the selected video from the list and the database. | **YES**  |     pass         |          |
+| U1.6.1        | A113                   | AT113e  | After the upload is complete, the artist can click on the video name in the "Video List" to play and preview the video. The video should be played in a preview window or section on the interface. | **YES**  |  pass            |          |

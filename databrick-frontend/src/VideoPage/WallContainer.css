@@ -1,0 +1,10 @@
+.walls-container {
+    position: relative;
+
+    .wall-container-content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+

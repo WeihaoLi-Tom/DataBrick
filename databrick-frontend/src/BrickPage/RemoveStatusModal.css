@@ -1,0 +1,42 @@
+.remove-status-modal {
+    .remove-status-modal-content {
+        min-width: 600px;
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .remove-status-feedback {
+            min-height: 30px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .remove-status-feedback.success {
+            color: green;
+        }
+
+        .remove-status-feedback.error {
+            color: red;
+        }
+
+        .remove-status-modal-buttons {
+            width: 100%;
+
+            button {
+                font-size: 14px;
+                margin-left: 20px;
+                margin-right: 20px;
+                width: 20%;
+            }
+        }
+
+        .close-button {
+            padding: 10px 20px;
+            font-size: 14px;
+            text-align: center !important;
+            min-width: 20%;
+        }
+    }
+}

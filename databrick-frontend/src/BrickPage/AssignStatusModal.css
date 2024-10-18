@@ -1,0 +1,37 @@
+.assign-status-modal {
+    .assign-status-modal-content {
+        min-width: 300px;
+
+        .assign-status-modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .select-brick {
+            font-size: 20px;
+        }
+
+        .assign-status-buttons {
+            display: flex;
+            flex-wrap: wrap; /* Allow buttons to wrap */
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .assign-status-buttons {
+            width: 80%;
+
+            button {
+                font-size: 14px;
+                margin-left: 20px;
+                margin-right: 20px;
+                width: 30%;
+            }
+        }
+    }
+}
+
+
+

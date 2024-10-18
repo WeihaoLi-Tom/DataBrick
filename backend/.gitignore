@@ -1,0 +1,11 @@
+__pycache__/
+
+# Ignore database files. Run `py manage.py migrate` from the backend to produce a new database if needed.
+*.sqlite3
+
+# The below directory hosts local files for shows (videos, video frame thumbnails, show thumbnails, blank vids). Can be 
+#   deleted once architecture is adjusted to store media elsewhere.
+/media/
+
+# Stores temporary files during the upload process. Can safely be deleted when not uploading any media.
+/tmp/

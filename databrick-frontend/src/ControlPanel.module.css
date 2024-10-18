@@ -1,0 +1,44 @@
+.controlPanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.heading {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+    .card {
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+        width: 200px; /* Set fixed width */
+        height: 150px; /* Set fixed height */
+        display: flex; /* Use flexbox for centering content */
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center; /* Center vertically */
+        align-items: center; /* Center horizontally */
+
+        
+    }
+
+        .card h2 {
+            margin-bottom: 10px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }

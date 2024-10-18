@@ -1,0 +1,26 @@
+/* Modal styling */
+.video-player-modal {
+    .video-player {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        max-height: 60vh;
+    }
+    
+    .close-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+    }
+}
+
+
+
+
